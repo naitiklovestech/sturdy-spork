@@ -30,7 +30,7 @@ void learning()
     printf("You're doing a great job \n Keep it up")
   }
   
-  elseif (method != practising)
+  else if (method != practising)
   {
     printf("You should start practising daily to improve your coding skills");
   }
