@@ -27,7 +27,7 @@ void learning()
 }
 ```
   
-I have followed the schedule given below to learn C programming language in 30 days and you can achieve it too
+## I have followed the schedule given below to learn C programming language in 30 days and you can achieve it too
 
 |Date  |Concepts to Learn and Practice       |Link to Learning Resource                                                           |
 |------|-------------------------------------|------------------------------------------------------------------------------------|
