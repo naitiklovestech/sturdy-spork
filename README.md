@@ -31,7 +31,7 @@ void learning()
 
 |Date  |Concepts to Learn and Practice       |Link to Learning Resource                                                           |Date |
 |------|-------------------------------------|------------------------------------------------------------------------------------|-----|
-|Day 1 |Introduction to C Programming        |https://www.learn-c.org/                                                            ||
+|Day 1 |Introduction to C Programming        |https://www.learn-c.org/                                                            |7 APRIL 2023|
 |Day 2 |Data types and Variables             |https://www.tutorialspoint.com/cprogramming/c_data_types.htm                        ||
 |Day 3 |Input and Output                     |https://www.learn-c.org/                                                            ||
 |Day 4 |Operators                            |https://www.learn-c.org/                                                            ||
