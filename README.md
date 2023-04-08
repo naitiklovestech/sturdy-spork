@@ -27,7 +27,7 @@ void learning()
 }
 ```
   
-## I have followed the schedule given below to learn C programming language in 30 days and you can achieve it too
+## The roadmap given below enlists the topics to be specifically learned with link to the best resource I could find for your reference
 
 |Date  |Concepts to Learn and Practice       |Link to Learning Resource                                                           |Date |
 |------|-------------------------------------|------------------------------------------------------------------------------------|-----|
