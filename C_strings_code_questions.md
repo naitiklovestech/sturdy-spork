@@ -16,11 +16,171 @@
 
 8. Write a C program to find the first occurrence of a substring in a string.
 
+```C
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char str1[100], str2[50];
+    int i, index=0, found = 0;
+    printf("\nEnter the string :");
+    gets(str1);
+    printf("\nEnter substring to be found :");
+    gets(str2);
+
+    while(str1[index]!='\0')
+    {
+        if(str1[index] == str2[0])
+        {
+            i = 0;
+            found = 1;
+            while(str2[i]!='\0')
+            {
+                if(str1[index+i]!= str2[i])
+                {
+                    found = 0;
+                    break;
+                }
+                i++;
+            
+            }
+        }
+
+        if(found == 1)
+        {
+            break;
+        }
+
+        index++;
+    }
+
+    if(found == 1)
+    {
+        printf("\n'%s' is found at index %d\n", str2, index);
+    }
+    else
+    {
+        printf("\n'%s' is not found\n", str2);
+    }
+
+    return 0;
+
+}
+```
+
 9. Write a C program to find the last occurrence of a substring in a string.
+
+```C
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char s[1000],c;  
+    int i,n,k=0;
+ 
+    printf("Enter  the string : ");
+    gets(s);
+    printf("Enter character to be searched: ");
+    c=getchar();
+    
+    for(i=strlen(s)-1;i>=0;i--)  
+    {
+    	if(s[i]==c)
+    	{
+		  k=1;
+    	  break;
+		}
+ 	}
+    if(k)
+ 	    printf("character  %c  is last occurrence at location:%d ",c,i);
+    else
+        printf("character is not in the string ");
+
+ 	 
+     
+    return 0;
+}
+```
 
 10. Write a C program to remove all occurrences of a character from a string.
 
+```C
+#include<stdio.h>
+#include <string.h>
+ 
+int main()
+{
+    char s[1000],c;  
+    int  i,k=0;
+ 
+    printf("Enter  the string : ");
+    gets(s);
+    
+	printf("Enter character: ");
+    c=getchar();
+ 
+     
+    for(i=0;s[i];i++)
+    {
+     	s[i]=s[i+k];
+ 
+     	
+     	if(s[i]==c)
+     	{
+		  k++;
+		  i--;
+	    }
+     	
+      	 
+     	
+	}
+ 
+ 	 printf("%s\n",s);
+ 	 
+     
+    return 0;
+}
+```
+
 11. Write a C program to replace all occurrences of a character with another character in a string.
+
+```C
+#include <stdio.h> 
+#include <string.h>
+ 
+int main()
+{
+    char s[1000],c1,c2;  
+    int  i;
+ 
+    printf("Enter  the string : ");
+    gets(s);
+    
+	printf("Enter a character replace: ");
+    c1=getchar();
+    getchar();
+    printf("\nEnter character to replace  with  %c : ",c1);
+    c2=getchar();
+    printf("\n before replace:%s",s);
+    
+    for(i=0;s[i];i++)
+	{  
+		if(s[i]==c1)
+		{
+		   s[i]=c2;
+	 
+	    }
+
+	}
+	   
+    printf("\nafter replace:%s",s);
+ 	 
+     
+    return 0;
+}
+```
 
 12. Write a C program to find the frequency of a character in a string.
 
@@ -59,3 +219,37 @@
 29. Write a C program to convert a string to an integer.
 
 30. Write a C program to convert an integer to a string.
+
+31. Write a C program to concatenate two strings without using library concatenate function.
+
+```C
+#include<stdio.h>
+#include<string.h>
+
+void concat(char[], char[]);
+
+int main()
+{
+    char s1[100], s2[50];
+    printf("\nEnter string 1 :");
+    gets(s1);
+    printf("\nEnter string 2 :");
+    gets(s2);
+
+    concat(s1,s2);
+
+    printf("\nConcated string is :%s\n", s1);
+    return 0;
+}
+
+void concat(char s1[], char s2[])
+{
+    int i, j;
+    i = strlen(s1);
+    for(j = 0; s2[j]!='\0' ; i++,j++)
+    {
+        s1[i] = s2[j];
+    }
+    s1[i] = '\0';
+}
+```
