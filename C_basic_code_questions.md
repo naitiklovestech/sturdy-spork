@@ -16,13 +16,57 @@ int main()
 2. Write a C program to print the sum of two integers.
 
 ```C
+#include<stdio.h>
 
+int main()
+{
+    //Taking the two integers as input from the user
+    int n1, n2;
+    printf("Enter the first integer here :");
+    scanf("%d", &n1);
+    printf("Enter the second integer here :");
+    scanf("%d", &n2);
+
+    //Creating a variable to hold the value of sum and summin the two numbers and printing it out to the terminal
+    int sum;
+    sum = n1+n2;
+
+    printf("The sum of the given integers is : %d\n", sum);
+
+    return 0;
+}
 ```
 
 3. Write a C program to find the largest of two numbers.
 
 ```C
+#include<stdio.h>
 
+int main()
+{
+    //Taking two numbers as input from the user
+    int n1, n2;
+    printf("Enter the value of first number :");
+    scanf("%d", &n1);
+    printf("Enter the value of second number :");
+    scanf("%d", &n2);
+
+    //Comparing the numbers and creating conditions so that it can be determined that which number is greater
+    if(n1==n2)
+    {
+        printf("Both numbers are equal\n");
+    }
+    else if(n1 > n2)
+    {
+        printf("First number is greater than the second number\n");
+    }
+    else if(n2 > n1)
+    {
+        printf("Second number is greater than the first number\n");
+    }
+
+    return 0;
+}
 ```
 
 4. Write a C program to find the factorial of a given number.
@@ -34,7 +78,26 @@ int main()
 5. Write a C program to check whether a number is even or odd.
 
 ```C
+#include<stdio.h>
 
+int main()
+{
+    //Taking the input from the user
+    int num;
+    printf("Enter the number here :");
+    scanf("%d", &num);
+
+    if(num%2==0)
+    {
+        printf("The given no is an even no");
+    }
+    else
+    {
+        printf("The given no is an odd no");
+    }
+
+    return 0;
+}
 ```
 
 6. Write a C program to check whether a given character is a vowel or consonant.
