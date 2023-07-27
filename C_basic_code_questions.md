@@ -127,19 +127,106 @@ int main()
 10. Write a C program to find the sum of an array of integers.
 
 ```C
+#include<stdio.h>
 
+int main()
+{
+    //Taking the integer to determine the size of array from the user
+    int n;
+    printf("Enter the length of integer array :");
+    scanf("%d", &n);
+
+    //Declaring array and making a loop to input integers in the array
+    int arry[n];
+    for( int i=0 ; i<n ; i++)
+    {
+        printf("Enter element %d :", i+1);
+        scanf("%d", &arry[i]);
+    }
+
+    //Initialsing the integer that holds the sum of the array elements and a loop so that sum of the array elements can be calculated
+    int sum_arr = 0;
+    for(int i=0 ; i<n ; i++)
+    {
+        sum_arr += arry[i];
+    }
+
+    printf("The sum of the array entered is %d\n", sum_arr);
+
+    return 0;
+}
 ```
 
 11. Write a C program to find the largest element in an array of integers.
 
 ```C
+#include<stdio.h>
 
+int main()
+{
+    //Taking the integer to determine the size of array from the user
+    int n;
+    printf("Enter the length of integer array :");
+    scanf("%d", &n);
+
+    //Declaring array and making a loop to input integers in the array
+    int arry[n];
+    for( int i=0 ; i<n ; i++)
+    {
+        printf("Enter element %d :", i+1);
+        scanf("%d", &arry[i]);
+    }
+
+    //Initialising the integer variable that holds the value of largest element in the array and a loop to place the biggest value in the variable
+    int lar_arr = arry[0];
+    for(int i=0 ; i<n ; i++)
+    {
+        if(arry[i]>lar_arr)
+        {
+            lar_arr = arry[i];
+        }
+    }
+
+    printf("The largest element of the array entered is %d\n", lar_arr);
+
+    return 0;
+}
 ```
 
 12. Write a C program to find the smallest element in an array of integers.
 
 ```C
+#include<stdio.h>
 
+int main()
+{
+    //Taking the integer to determine the size of array from the user
+    int n;
+    printf("Enter the length of integer array :");
+    scanf("%d", &n);
+
+    //Declaring array and making a loop to input integers in the array
+    int arry[n];
+    for( int i=0 ; i<n ; i++)
+    {
+        printf("Enter element %d :", i+1);
+        scanf("%d", &arry[i]);
+    }
+
+    //Initialising the integer variable that holds the value of largest element in the array and a loop to place the biggest value in the variable
+    int smol_arr = arry[0];
+    for(int i=0 ; i<n ; i++)
+    {
+        if(arry[i]<smol_arr)
+        {
+            smol_arr = arry[i];
+        }
+    }
+
+    printf("The smallest element of the array entered is %d\n", smol_arr);
+
+    return 0;
+}
 ```
 
 13. Write a C program to sort an array of integers in ascending order.
