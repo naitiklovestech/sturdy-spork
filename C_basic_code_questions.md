@@ -1,4 +1,4 @@
-# 30 Basic programming questions in C
+#30 Basic programming questions in C
 
 1. Write a C program to print "Hello, World!"
 
